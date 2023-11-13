@@ -1,0 +1,40 @@
+SYSTEM  = CrN
+
+PREC    = Accurate
+ENCUT   = 500.0
+LREAL   = .FALSE.
+EDIFF   = 1.e-7
+NELM    = 160
+ISMEAR  = -1
+SIGMA   = 0.01
+ADDGRID = .TRUE.
+# NCORE   = 64
+
+ISPIN = 2
+MAGMOM =  -5  5 -5 -5 -5  5  5  5 -5  5  5  5 -5 -5 -5 -5 -5  5  5 -5 -5 -5 -5 -5 -5  5  5 -5  5  5 -5  5 -5 -5  5  5 -5  5 -5 -5  5  5  5 -5  5 -5  5 -5  5  5  5  5  5 -5  5 -5  5  5 -5  5  5 -5 -5 -5  5  5  5  5 -5 -5 -5 -5 -5 -5  5 -5  5  5 -5  5 -5  5 -5  5  5 -5 -5 -5  5  5 -5  5 -5 -5 -5  5  5  5 -5 -5 -5 -5  5  5 -5  5  5  5 108*0
+
+# U parameters
+#
+# U-J = 3 eV on Cr d orbitals
+# Zhao et al., PRB 90, 184102 (2014)
+
+LDAU = .TRUE.
+LDAUTYPE = 2
+LDAUL = 2 -1
+LDAUU = 3.0 0.0
+
+LASPH = True
+
+LORBIT = 11
+
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+
+#NSW=200
+IBRION=1
+ISIF=3
+EDIFFG=-0.005
+NELMIN = 4
+#NFREE  = 10
+
+#SYMPREC = 2.e-5
